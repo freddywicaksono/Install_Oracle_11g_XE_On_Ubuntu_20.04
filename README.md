@@ -32,7 +32,7 @@ cd Disk1
 ```
 sudo alien --scripts -d oracle-xe-11.2.0-1.0.x86_64.rpm
 ```
-### Wait the process until ...
+Wait the process until ...
 ```
 oracle-xe_11.2.0-2_amd64.deb generated
 ```
