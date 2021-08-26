@@ -159,3 +159,7 @@ sudo service oracle-xe start
 sqlplus sys as sysdba
 ```
 use password as you set in configure process above
+if success:
+```
+SQL>
+```
