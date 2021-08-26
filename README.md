@@ -59,3 +59,26 @@ fi
 update-rc.d oracle-xe defaults 80 01
 ```
 save the file...
+
+Give execute privilege to the script
+```
+sudo chmod 755 /sbin/chkconfig
+```
+## Set the Kernel parameters :
+Oracle 11gR2 XE requires to set the following additional kernel parameters:
+```
+sudo vim /etc/sysctl.d/60-oracle.conf
+```
+Copy-Paste this script:
+```
+# Oracle 11g XE kernel parameters  
+fs.file-max=6815744  
+net.ipv4.ip_local_port_range=9000 65000  
+kernel.sem=250 32000 100 128 
+kernel.shmmax=536870912
+```
+save the file
+## Verify the changes
+```
+sudo cat /etc/sysctl.d/60-oracle.conf 
+```
