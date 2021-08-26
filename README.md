@@ -91,6 +91,30 @@ Verify:
 ```
 sudo sysctl -q fs.file-max
 ```
+## Create a file
+```
+sudo nano /etc/rc2.d/S01shm_load
+```
+Copy-paste this script
+```
+#!/bin/sh
+case "$1" in
+start)
+    mkdir /var/lock/subsys 2>/dev/null
+    touch /var/lock/subsys/listener
+    rm /dev/shm 2>/dev/null
+    mkdir /dev/shm 2>/dev/null
+*)
+    echo error
+    exit 1
+    ;;
+
+esac
+```
+## Set the file S01shm_load permission
+```
+sudo chmod 755 /etc/rc2.d/S01shm_load
+```
 ## Install net-tools
 ```
 sudo apt install net-tools
