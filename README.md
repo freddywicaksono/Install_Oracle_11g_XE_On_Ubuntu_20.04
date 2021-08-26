@@ -28,7 +28,11 @@ sudo apt-get install libaio1 unixodbc
 ```
 cd Disk1
 ```
-## Conver Oracle 11g XE rpm to deb
+## Convert Oracle 11g XE rpm to deb
 ```
 sudo alien --scripts -d oracle-xe-11.2.0-1.0.x86_64.rpm
+```
+### Wait the process until ...
+```
+oracle-xe_11.2.0-2_amd64.deb generated
 ```
