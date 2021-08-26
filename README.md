@@ -83,3 +83,16 @@ Verify the changes
 ```
 sudo cat /etc/sysctl.d/60-oracle.conf 
 ```
+## Load kernel parameters
+```
+sudo service procps restart 
+```
+Verify:
+```
+sudo sysctl -q fs.file-max
+```
+## Install additional application
+```
+sudo apt install net-tools
+sudo apt install gawk
+```
