@@ -101,7 +101,22 @@ sudo apt install gawk
 sudo ln -s -f /usr/bin/awk /bin/awk
 ```
 ## Create Listener
+Set user as root
 ```
 sudo su
 touch /var/lock/subsys/listener 
 ```
+Return as Sudo user
+```
+exit
+```
+## Ready to Install Oracle 11g XE
+Should be on directory Disk1
+```
+sudo dpkg --install oracle-xe_11.2.0-2_amd64.deb
+```
+## Proceed Oracle 11g XE configuration
+```
+sudo /etc/init.d/oracle-xe configure
+```
+
