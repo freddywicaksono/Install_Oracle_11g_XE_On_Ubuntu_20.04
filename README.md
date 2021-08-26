@@ -78,7 +78,8 @@ kernel.sem=250 32000 100 128
 kernel.shmmax=536870912
 ```
 save the file
-## Verify the changes
+
+Verify the changes
 ```
 sudo cat /etc/sysctl.d/60-oracle.conf 
 ```
