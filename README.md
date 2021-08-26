@@ -127,4 +127,35 @@ Set User as root
 ```
 sudo /etc/init.d/oracle-xe configure
 ```
-
+please do remember the password you fill on this process
+the password is for user: sys
+## Setup environment variables
+```
+nano ~/.bashrc
+```
+## Add this script at the end of the file
+```
+export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+export ORACLE_SID=XE
+export NLS_LANG=`$ORACLE_HOME/bin/nls_lang.sh`
+export ORACLE_BASE=/u01/app/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+```
+## Load the changes by executing .bashrc file
+```
+. ~/.bashrc
+```
+or
+```
+source ~/.bashrc
+```
+## Start Oracle 11g XE service
+```
+sudo service oracle-xe start
+```
+## Test login to Oracle Console via SqlPlus
+```
+sqlplus sys as sysdba
+```
+use password as you set in configure process above
