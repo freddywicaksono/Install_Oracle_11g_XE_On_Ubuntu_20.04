@@ -1,0 +1,1 @@
+# Install_Oracle_11g_XE_On_Ubuntu_20.04
