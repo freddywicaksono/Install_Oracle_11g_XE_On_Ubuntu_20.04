@@ -111,6 +111,7 @@ start)
 
 esac
 ```
+Save the file
 ## Set the file S01shm_load permission
 ```
 sudo chmod 755 /etc/rc2.d/S01shm_load
