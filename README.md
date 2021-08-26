@@ -96,3 +96,12 @@ sudo sysctl -q fs.file-max
 sudo apt install net-tools
 sudo apt install gawk
 ```
+## Create symlink
+```
+sudo ln -s -f /usr/bin/awk /bin/awk
+```
+## Create Listener
+```
+sudo su
+touch /var/lock/subsys/listener 
+```
