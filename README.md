@@ -133,7 +133,7 @@ the password is for user: sys
 ```
 nano ~/.bashrc
 ```
-## Add this script at the end of the file
+Add this script at the end of the file
 ```
 export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
 export ORACLE_SID=XE
