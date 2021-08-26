@@ -16,3 +16,19 @@ sudo apt install unzip
 ```
 unzip oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 ```
+## Install RPM to Deb Converter
+```
+sudo apt install alien
+```
+## Install Additional library
+```
+sudo apt-get install libaio1 unixodbc
+```
+## Activate Oracle 11g XE location
+```
+cd Disk1
+```
+## Conver Oracle 11g XE rpm to deb
+```
+sudo alien --scripts -d oracle-xe-11.2.0-1.0.x86_64.rpm
+```
