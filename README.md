@@ -123,6 +123,7 @@ Should be on directory Disk1
 sudo dpkg --install oracle-xe_11.2.0-2_amd64.deb
 ```
 ## Proceed Oracle 11g XE configuration
+Set User as root
 ```
 sudo /etc/init.d/oracle-xe configure
 ```
