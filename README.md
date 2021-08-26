@@ -1,4 +1,4 @@
-# Install_Oracle_11g_XE_On_Ubuntu_20.04
+# Install Oracle 11g XE On Ubuntu 20.04
 
 ## Download Oracle 11g XE R2
 ```
@@ -159,6 +159,7 @@ sudo service oracle-xe start
 sqlplus sys as sysdba
 ```
 use password as you set in configure process above
+
 if success:
 ```
 SQL>
