@@ -91,10 +91,16 @@ Verify:
 ```
 sudo sysctl -q fs.file-max
 ```
-## Install additional application
+## Install net-tools
 ```
 sudo apt install net-tools
-sudo apt install gawk
+```
+## Remove Current AWK
+sudo apt-get remove --auto-remove gawk
+```
+## Install Original AWK
+```
+sudo apt-get install original-awk  
 ```
 ## Create symlink
 ```
