@@ -96,6 +96,7 @@ sudo sysctl -q fs.file-max
 sudo apt install net-tools
 ```
 ## Remove Current AWK
+```
 sudo apt-get remove --auto-remove gawk
 ```
 ## Install Original AWK
